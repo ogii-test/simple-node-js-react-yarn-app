@@ -10,5 +10,4 @@ jobs:
       - image: cimg/node:15.1
     steps:
       - checkout
-      - node/install-packages:
-          pkg-manager: yarn
+      - run: yarn install --immutable
